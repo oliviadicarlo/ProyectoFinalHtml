@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedLife</title>
+    <link rel="stylesheet" href="Style/Style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <img class="logo" src="img/logo2.png" alt="Logo">
+            <ul class="nav-links">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Ayuda</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="#">Salir</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="search-container">
+        <img src= "img/lupa.png" alt="Buscar" class="search-icon">
+        <input type="text" placeholder="Buscar">
+    </div>
+   
+
+
+    <button class="mas-info-boton">Agregar</button>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="stroke">
+                <h2><b>Nombre Hospital:</b></h2>
+            </div>
+            <div class = "stroke">
+                <h3><b>Emails:</b></h3>
+                <div class="email">
+                    olidicarlo@gmail.com
+                </div>
+            <div class= "stroke">
+                <div class="email">
+                    
+                </div>
+            </div>
+
+                <br>
+            </div>
+        <div class = "stroke" >
+            <p><b>Direccion:</b> Honorio Puerredón 7829 </p>
+            <p><b>Localidad:</b> CABA</p>
+            <p><b>Provincia:</b> Buenos Aires</p>
+            <p><b>Servicio:</b>Hospital de Pediatría</p>
+            <p><b>Responsable:</b></p>
+            <p><b>Telefono:</b> 15 7365 7825</p>
+        </div>
+          
+        
+            
+        </div>
+    </div>
+
+    
+    <div class="cont">
+        <div class="row">
+        <div class="infoHospi">
+          <h2>Hospital G. Duran</h2>
+          <p>Teléfono: 11 8376 2902</p>
+          <p>Servicio: Bioquímica</p>
+          <button class="mas-info-btn">Más info</button>
+        </div>
+    </div>
+    </div>
+    <div class="cont">
+        <div class="row">
+        <div class="infoHospi">
+          <h2>Hospital Rivadavia</h2>
+          <p>Teléfono: 11 8673 9682</p>
+          <p>Servicio: No definido</p>
+          <button class="mas-info-btn">Más info</button>
+        </div>
+    </div>
+    </div>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="stroke">
+                <h2><b>Hospital G. Duran</b></h2>
+            </div>
+            <div class = "stroke">
+                <h3><b>Emails:</b></h3>
+                <div class="email">
+                    olidicarlo@gmail.com
+                </div>
+                
+                <br>
+            </div>
+        <div class = "stroke" >
+            <p><b>Direccion:</b> Honorio Puerredón 7829 </p>
+            <p><b>Localidad:</b> CABA</p>
+            <p><b>Provincia:</b> Buenos Aires</p>
+            <p><b>Servicio:</b>Hospital de Pediatría</p>
+            <p><b>Responsable:</b></p>
+            <p><b>Telefono:</b> 15 7365 7825</p>
+        </div>
+          
+        
+            
+        </div>
+    </div>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+
+        </div>
+    </div>
+
+    <script>
+    
+        var modal = document.getElementById("myModal");
+        var btns = document.querySelectorAll(".mas-info-btn");
+        var span = document.getElementsByClassName("close")[0];
+        btns.forEach(function(btn) {
+            btn.onclick = function() {
+                modal.style.display = "block";
+            }
+        });
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+</html>
+
+
+</body>
+

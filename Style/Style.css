@@ -1,0 +1,276 @@
+body {
+    margin: 0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+b{
+    color: #00276A;
+}
+
+header {
+    background-color: #F9F9F9;
+    padding: 10px 0;
+    border-bottom: 0.15em solid #003A9F; 
+
+}
+
+a{
+    
+    font-size: 1.2em;
+    color: #003A9F;
+    text-decoration: none;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2em;
+}
+
+.logo img {
+    max-width: 16em; 
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 2em;
+}
+
+.nav-links li:last-child {
+    margin-right: 0;
+}
+
+.nav-links a {
+    color: #00276A;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #7d99e5;
+}
+
+/*BOTONES*/
+
+.button-container {
+    margin-top: 4.5em;
+    padding: 3em;
+}
+
+.button-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 3em;
+}
+
+.button-with-image {
+    display: flex;
+    align-items: center;
+}
+
+.button-with-image img {
+    height: 4.7em; 
+    width: auto;
+    margin-right: 1em; 
+}
+
+button {
+    width: 17em;
+    height: 3em;
+    background-color: #ffffff;
+    margin-right: 3em;
+    border: none;
+    border-radius: 0.6em;
+    box-shadow: 2px 2px 8px rgba(97, 93, 93, 0.5);
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #c2e1ee;
+}
+
+
+/*HOSPITALES*/
+
+.infoHospi
+{
+    background-color: #cadbff;
+    border-radius: 0.9em;
+    width: 82em; 
+    height:11em;
+    border: none;
+    border-radius: 0.6em;
+    box-shadow: 2px 2px 8px rgba(97, 93, 93, 0.5);
+}
+
+.cont
+{
+    margin-top: 9em;
+    padding: 2em;
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align:left;
+}
+
+
+
+/*MODAL*/
+
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4); 
+    padding-top: 2em;
+  
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 3em;
+    border: 1px solid #888;
+    width: 60em;
+    border-radius: 2.5em;
+}
+.stroke
+{
+    border-bottom: 0.1em solid #003A9F;
+    width: 60em;
+    margin-bottom:1.5em;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 2em;
+    font-weight: bold;
+    margin-right: 0.7em;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+/*BOTON AGREGAR*/
+
+.button  {
+    width: 17em;
+    height: 3em;
+    background-color: #ffffff;
+    margin-right: 3em;
+    border: none;
+    border-radius: 0.6em;
+    box-shadow: 2px 2px 8px rgba(97, 93, 93, 0.5);
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: background-color 0.3s;
+}
+
+/*EMAILS*/
+
+.email {
+    width: 12em;
+    height: 1.41em;
+    margin-right: 3em;
+    bottom: 3em;
+    color: #00276A;
+    background-color: #e5ebf1;
+    border-radius: 1em;
+    cursor: pointer;
+    font-size: 1.2em;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+
+.infoHospi {
+    position: relative;
+    background-color: #e4f3ff;
+    border-radius: 0.9em;
+    width: 72em; 
+    height:10em;
+    border: none;
+    border-radius: 0.6em;
+    padding: 1em;
+    text-align: left; 
+    font-size: 1em;
+    margin-top: 1em; 
+}
+
+.mas-info-btn {
+    background-color: #022f7c; 
+    color: #fff;
+    border: none;
+    border-radius: 1em;
+    cursor: pointer;
+    width: 12em;
+    position: absolute;
+    bottom: 4em; 
+    right: 1em; 
+    padding: 0.5em 1em; 
+
+}
+
+.mas-info-boton {
+    position: fixed;
+    top:9em; 
+    right: 5em;
+    background-color: #022f7c;
+    color: #fff;
+    border: none;
+    border-radius: 1em;
+    cursor: pointer;
+    padding: 0.5em 1em;
+    width:12em;
+    font-size: 1.2em;
+    z-index: 1000; 
+}
+/*BUSCADOR DE HOSPITAL*/
+.search-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px;
+    width: 250px;
+}
+
+.search-container input[type="text"] {
+    border-color: #00276A;
+    outline: none;
+    flex-grow: 1;
+    padding: 5px;
+}
+
+.search-icon {
+    font-size: 1em;
+    color: #888;
+    padding: 0 10px;
+}
+
+
+
+/*CONTACTOS*/
